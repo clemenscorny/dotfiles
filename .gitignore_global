@@ -16,6 +16,7 @@
 *run.xml
 *.snm
 *.nav
+*.tex.orig
 
 # Compiled source #
 ###################
