@@ -22,7 +22,7 @@ nnoremap ; :
 
 filetype plugin on
 filetype indent on
-
+ 
 :colorscheme ron
 
 set wildmenu
@@ -34,6 +34,10 @@ set nu
 
 "Overrides sensible.vim
 set noundofile
+set laststatus=1
+set noruler
+set noshowcmd
+set scrolloff=2
 
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
