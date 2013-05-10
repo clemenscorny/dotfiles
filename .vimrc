@@ -32,6 +32,9 @@ set incsearch
 set nofoldenable
 set nu
 
+"Overrides sensible.vim
+set noundofile
+
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 
