@@ -17,6 +17,7 @@
 *.snm
 *.nav
 *.tex.orig
+*.auxlock
 
 # Compiled source #
 ###################
@@ -54,6 +55,12 @@ CMakeCache.txt
 .project
 Makefile
 .pydevproject
+
+#Archive files
+*.zip
+*.tar.gz
+*.tar.bz
+*.tar
 
 # Temporary files #
 ###################
