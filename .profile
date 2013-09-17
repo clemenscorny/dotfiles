@@ -20,7 +20,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-export PATH=$PATH:~/Dropbox/Daten/scripts
-export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-i386
-export PYTHONPATH=~/opencv/lib/python2.7/dist-packages

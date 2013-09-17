@@ -102,4 +102,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+export PATH=$PATH:/sbin:~/Dropbox/Daten/scripts
 alias vless='/usr/share/vim/vim73/macros/less.sh'
+export EDITOR=vi
