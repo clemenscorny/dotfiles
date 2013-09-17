@@ -1,24 +1,15 @@
 execute pathogen#infect()
 
 runtime! plugin/sensible.vim
+runtime! plugin/jedi.vim
 
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
 inoremap <Tab> <C-X><C-F>
-
 :imap jk <ESC>
-
 nmap K i<CR><Esc>k$
-nmap <C-Enter> O<Esc>
-nmap <S-Enter> o<Esc>
-
+nmap <C-o> o<Esc>k
+nmap <C-i> O<Esc>j
 nnoremap ; :
+nnoremap : ;
 
 filetype plugin on
 filetype indent on
@@ -31,11 +22,11 @@ set ignorecase
 set incsearch
 set nofoldenable
 set nu
+set noswapfile
 
 "Overrides sensible.vim
 set noundofile
 set laststatus=1
-set noruler
 set noshowcmd
 set scrolloff=2
 
