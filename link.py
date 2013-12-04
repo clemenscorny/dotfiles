@@ -9,16 +9,16 @@ with open('dotfiles') as f:
 	for line in f:
 		dotfile = line.strip()
 		dotfile_home = os.path.expanduser('~/' + dotfile)
-		if os.path.exists(dotfile_home):
+		if os.path.islink(dotfile_home):
+			print 'unlinking',dotfile_home
+			os.unlink(dotfile_home)
+		elif os.path.exists(dotfile_home):
 			print 'removing', dotfile_home
 			if os.path.isdir(dotfile_home):
 				shutil.rmtree(dotfile_home)
 			else: 
 				os.remove(dotfile_home)
 
-		elif os.path.islink(dotfile_home):
-			print 'unlinking',dotfile_home
-			os.unlink(dotfile_home)
 
 		dotfile_abs = os.path.join(dotfiles_dir, dotfile)
 		print 'linking', dotfile_abs, 'to', dotfile_home
