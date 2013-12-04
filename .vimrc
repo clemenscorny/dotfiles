@@ -6,8 +6,8 @@ runtime! plugin/jedi.vim
 inoremap <Tab> <C-X><C-F>
 :imap jk <ESC>
 nmap K i<CR><Esc>k$
-nmap <C-o> o<Esc>k
-nmap <C-i> O<Esc>j
+nmap <C-i> o<Esc>k
+nmap <C-o> O<Esc>j
 nnoremap ; :
 nnoremap : ;
 
@@ -32,6 +32,7 @@ set scrolloff=2
 
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
+let g:Imap_UsePlaceHolders = 0
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%100v.\+/
