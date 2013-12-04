@@ -67,3 +67,4 @@ Makefile
 *.swo
 *.swp
 *~
+*.mat
