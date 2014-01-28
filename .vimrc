@@ -35,6 +35,8 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Imap_UsePlaceHolders = 0
 
+au BufRead,BufNewFile *.md set filetype=markdown
+
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%100v.\+/
 
