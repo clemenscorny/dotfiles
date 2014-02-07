@@ -23,11 +23,9 @@ set ignorecase
 set incsearch
 set nofoldenable
 set number
-set noswapfile
 set splitright
 
 "Overrides sensible.vim
-set noundofile
 set laststatus=1
 set noshowcmd
 set scrolloff=2
