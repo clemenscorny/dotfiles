@@ -22,8 +22,9 @@ set wildmode=longest,list
 set ignorecase
 set incsearch
 set nofoldenable
-set nu
+set number
 set noswapfile
+set splitright
 
 "Overrides sensible.vim
 set noundofile
