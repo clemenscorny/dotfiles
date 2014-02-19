@@ -10,7 +10,6 @@ nmap <C-i> o<Esc>k
 nmap <C-o> O<Esc>j
 nnoremap ; :
 nnoremap : ;
-nmap <F9> oimport ipdb; ipdb.set_trace()<ESC>
 
 filetype plugin on
 filetype indent on
