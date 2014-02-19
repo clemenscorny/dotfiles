@@ -24,6 +24,10 @@ set incsearch
 set nofoldenable
 set number
 set splitright
+set directory=/tmp
+
+set undodir=/tmp " where to save undo histories
+set undofile                " Save undo's after file closes
 
 "Overrides sensible.vim
 set laststatus=1
