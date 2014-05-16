@@ -68,3 +68,7 @@ Makefile
 *.swp
 *~
 *.mat
+
+# Resource files #
+##################
+*.avi
