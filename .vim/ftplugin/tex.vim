@@ -48,3 +48,5 @@ vnoremap <expr> a$ <SID>ADollar()
 vnoremap <expr> i$ <SID>IDollar()
 onoremap a$ :normal va$<CR>
 onoremap i$ :normal vi$<CR>
+
+nmap <F10> o\tikzset{external/remake next}<ESC>
