@@ -93,3 +93,5 @@ alias rm='rm -i'
 export EDITOR=vi
 export PYTHONPATH=~/Dropbox/cv/common/py:~/Custom/opencv/lib/python2.7/dist-packages:~/Custom/flann/share/flann/python/
 stty -ixon
+
+. /etc/profile.d/vte.sh
