@@ -87,7 +87,7 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/sbin:~/Dropbox/bin
-alias vless='/usr/share/vim/vim73/macros/less.sh'
+alias vless='/usr/share/vim/vim74/macros/less.sh'
 alias rmt=gvfs-trash
 alias rm='rm -i'
 export EDITOR=vi
