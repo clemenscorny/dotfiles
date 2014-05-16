@@ -24,7 +24,6 @@ set nofoldenable
 set number
 set splitright
 set directory=/tmp
-
 set undodir=/tmp " where to save undo histories
 set undofile                " Save undo's after file closes
 
@@ -37,8 +36,6 @@ set laststatus=1
 set noshowcmd
 set scrolloff=2
 
-let g:tex_flavor='latex'
-let g:Tex_DefaultTargetFormat='pdf'
 let g:Imap_UsePlaceHolders = 0
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
