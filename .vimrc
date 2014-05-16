@@ -37,6 +37,7 @@ set noshowcmd
 set scrolloff=2
 
 let g:Imap_UsePlaceHolders = 0
+let g:pandoc_use_conceal=0
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
 match OverLength /\%100v.\+/
