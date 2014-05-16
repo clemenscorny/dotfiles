@@ -9,6 +9,7 @@ nmap <C-i> o<Esc>k
 nmap <C-o> O<Esc>j
 nnoremap ; :
 nnoremap : ;
+noremap Y y$
 
 filetype plugin on
 filetype indent on
