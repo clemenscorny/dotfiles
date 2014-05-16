@@ -23,3 +23,5 @@
 	new = green bold
 	meta = yellow bold
 	frag = cyan bold
+[push]
+	default = simple
