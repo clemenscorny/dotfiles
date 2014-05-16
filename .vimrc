@@ -1,7 +1,6 @@
 execute pathogen#infect()
 
 runtime! plugin/sensible.vim
-runtime! plugin/jedi.vim
 
 inoremap <Tab> <C-X><C-F>
 :imap jk <ESC>
