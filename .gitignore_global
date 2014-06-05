@@ -18,6 +18,7 @@
 *.nav
 *.tex.orig
 *.auxlock
+*.fls
 
 # Compiled source #
 ###################
