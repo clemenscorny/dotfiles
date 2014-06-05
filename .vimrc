@@ -2,8 +2,13 @@ execute pathogen#infect()
 
 runtime! plugin/sensible.vim
 
+colorscheme ron
+
+filetype plugin on
+filetype indent on
+
 inoremap <Tab> <C-X><C-F>
-:imap jk <ESC>
+imap jk <ESC>
 nmap K i<CR><Esc>k$
 nmap <C-i> o<Esc>k
 nmap <C-o> O<Esc>j
@@ -12,11 +17,7 @@ nnoremap : ;
 noremap Y y$
 inoremap <expr> <Nul> Auto_complete_string()
 inoremap <expr> <C-Space> Auto_complete_string()
-
-filetype plugin on
-filetype indent on
- 
-:colorscheme ron
+vnoremap <silent> <expr> p <sid>Repl()
 
 set wildmenu
 set wildmode=longest,list
@@ -29,7 +30,6 @@ set directory=/tmp
 set undodir=/tmp " where to save undo histories
 set undofile                " Save undo's after file closes
 set nowritebackup
-
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -39,9 +39,7 @@ set laststatus=1
 set noshowcmd
 set scrolloff=2
 
-let g:Imap_UsePlaceHolders = 0
 let g:pandoc_use_conceal=0
-
 let g:syntastic_python_checkers = ['pyflakes']
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
@@ -58,8 +56,6 @@ function! s:Repl()
     return "p@=RestoreRegister()\<cr>"
 endfunction
 
-" NB: this supports "rp that replaces the selection by the contents of @r
-vnoremap <silent> <expr> p <sid>Repl()
 
 function! Auto_complete_string()
     if pumvisible()
@@ -75,4 +71,3 @@ function! Auto_complete_opened()
     end
     return ""
 endfunction
-
