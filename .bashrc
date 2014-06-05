@@ -90,6 +90,7 @@ export PATH=$PATH:/sbin:~/Dropbox/bin
 alias vless='/usr/share/vim/vim74/macros/less.sh'
 alias rmt=gvfs-trash
 alias rm='rm -i'
+alias pylab='ipython --pylab'
 export EDITOR=vi
 export PYTHONPATH=~/Dropbox/cv/common/py:~/Custom/opencv/lib/python2.7/dist-packages:~/Custom/flann/share/flann/python/
 stty -ixon
