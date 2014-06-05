@@ -10,6 +10,8 @@ nmap <C-o> O<Esc>j
 nnoremap ; :
 nnoremap : ;
 noremap Y y$
+inoremap <expr> <Nul> Auto_complete_string()
+inoremap <expr> <C-Space> Auto_complete_string()
 
 filetype plugin on
 filetype indent on
@@ -55,3 +57,19 @@ endfunction
 
 " NB: this supports "rp that replaces the selection by the contents of @r
 vnoremap <silent> <expr> p <sid>Repl()
+
+function! Auto_complete_string()
+    if pumvisible()
+        return "\<C-n>"
+    else
+        return "\<C-x>\<C-o>\<C-r>=Auto_complete_opened()\<CR>"
+    end
+endfunction
+
+function! Auto_complete_opened()
+    if pumvisible()
+        return "\<Down>"
+    end
+    return ""
+endfunction
+
