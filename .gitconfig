@@ -1,11 +1,10 @@
 [user]
-	name = Georg Nebehay
-	email = gnebehay@gmail.com
+	name = Clemens Korner
+	email = clemens.corny@gmail.com
 [color]
 	ui = auto
 [core]
-	editor = vi
-	excludesfile = ~/.gitignore_global
+	editor = nano
 [difftool]
 	prompt = 0
 [diff]
