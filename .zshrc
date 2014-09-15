@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python)
+plugins=(git python command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,4 +81,12 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 # Disable annoying beep
 setopt NO_BEEP
+
+# [alt-l] pipe the current command through less
+bindkey -s "\el" " 2>&1|less^M"
+
+# [alt-s] add sudo at the beginning of the line
+insert_sudo () { zle beginning-of-line; zle -U "sudo " }
+zle -N insert-sudo insert_sudo
+bindkey "^[s" insert-sudo
 
